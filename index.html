@@ -96,12 +96,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h1><ol>
-<li>Git<ul>
-<li>sshキーの作成</li>
-</ul>
-</li>
 <li>Github<ul>
 <li>リポジトリの作成</li>
+<li>sshキーの作成</li>
 <li>sshキーの登録</li>
 </ul>
 </li>
@@ -112,6 +109,19 @@
 </ul>
 </li>
 </ol>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><h3 id="リポジトリの作成"><a href="#リポジトリの作成" class="headerlink" title="リポジトリの作成"></a>リポジトリの作成</h3><p>注意点</p>
+<ul>
+<li>publicで作成する必要がある。<br> privateで作成した場合、Github pagesで世界中に公開することが出来ない。<br> 特定の人だけが見れる形で公開する場合はprivateで作成する。(要課金)</li>
+<li>Repository nameをxxx.github.ioで作成する必要がある。  <ol>
+<li>‘Owner.github.io’（おすすめ）<br>Githubのアカウント名を先頭に付けてrepositoryを作成した場合、公開後のurlがOwner.github.ioとなる。</li>
+<li>‘xxx.github.io’<br>Githubのアカウント名以外を先頭に付けてrepositoryを作成した場合、公開後のurlがOwner.github.io&#x2F;xxx.github.ioとなる。</li>
+</ol>
+</li>
+</ul>
+<h3 id="sshキーの作成"><a href="#sshキーの作成" class="headerlink" title="sshキーの作成"></a>sshキーの作成</h3><p>注意点</p>
+<ul>
+<li>defaultの名前以外で作成した場合はconfigファイルを作成する必要がある。<br> configファイルの中身に<br> Host github github.com<br> HostName github.com<br> IdentityFile ~&#x2F;.ssh&#x2F;”ファイル名”<br> User git<br> を追加する。</li>
+</ul>
 
       
     </div>
