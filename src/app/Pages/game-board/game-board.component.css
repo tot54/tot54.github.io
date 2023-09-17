@@ -1,0 +1,76 @@
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .player-section, .npc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .result-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .message {
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  
+  }
+  .reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f44336; /* 赤色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    /* ホバー時のエフェクト */
+    &:hover {
+      background-color: #d32f2f; /* 濃い赤色 */
+      transform: scale(1.05); /* 少し拡大 */
+    }
+  
+    /* アクティブ時（クリック時）のエフェクト */
+    &:active {
+      background-color: #c62828; /* より濃い赤色 */
+      transform: scale(0.95); /* 少し縮小 */
+    }
+  
+    /* ボタンが無効化されている場合のスタイル */
+    &:disabled {
+      background-color: #e57373; /* 薄い赤色 */
+      cursor: not-allowed;
+    }
+  }
+  

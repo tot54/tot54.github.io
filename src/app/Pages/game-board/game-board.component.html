@@ -1,0 +1,26 @@
+<!-- chatGPTによる作成 手直しあり-->
+
+<button class="reset-button" (click)="resetGame()">Reset</button>
+<div class="message">{{ text }}</div>
+<div class="game-board" fxLayout="row" fxLayoutAlign="center center">
+    <div class="player-section">
+      <h2>Player</h2>
+      <app-card *ngIf="gameService.User.selectedCard" [card]="gameService.User.selectedCard" [isSelectable]="false"></app-card>
+        <app-card *ngIf="!gameService.User.selectedCard" [card]="unknownCard" [isSelectable]="false"></app-card>
+    </div>
+    <div class="npc-section">
+      <h2>NPC</h2>
+      <app-card *ngIf="gameService.NPC.selectedCard" [card]="gameService.NPC.selectedCard" [isSelectable]="false"></app-card>
+      <app-card *ngIf="!gameService.NPC.selectedCard" [card]="unknownCard" [isSelectable]="false"></app-card>
+    </div>
+
+    
+    
+    <!-- <div class="result-section" *ngIf="result">
+        <h2>Result: {{ result }}</h2>
+    </div> -->
+</div>
+
+<div class="cards">
+  <app-card *ngFor="let card of gameService.User.cards" [card]="card" [isSelectable]="true" (click)="selectCardUser(card)"></app-card>
+</div>

@@ -1,0 +1,16 @@
+.card {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  /* カードがホバーされたときのエフェクト */
+  .hover-effect:hover {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
