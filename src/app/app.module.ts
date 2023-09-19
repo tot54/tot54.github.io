@@ -8,9 +8,6 @@ import { AppComponent } from './app.component';
 import { GameBoardComponent } from './Pages/game-board/game-board.component';
 import { StartScreenComponent } from './Pages/start-screen/start-screen.component'; 
 import { CardComponent } from './Components/card/card.component';
-import { PlayerHandComponent } from './Components/player-hand/player-hand.component';
-import { NpcHandComponent } from './Components/npc-hand/npc-hand.component';
-import { ResultComponent } from './Components/result/result.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +15,6 @@ import { ResultComponent } from './Components/result/result.component';
     GameBoardComponent,
     StartScreenComponent,
     CardComponent,
-    PlayerHandComponent,
-    NpcHandComponent,
-    ResultComponent,
   ],
   imports: [
     BrowserModule,

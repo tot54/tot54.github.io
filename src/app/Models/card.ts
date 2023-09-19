@@ -23,3 +23,4 @@ class Card {
   const UNKNOWN_CARD = new Card(CardType.CITIZEN, 'assets/images/Card/card_back.png');
 
   export {Card, CardType, EMPEROR_CARD, SLAVE_CARD, CITIZEN_CARD, UNKNOWN_CARD}
+
